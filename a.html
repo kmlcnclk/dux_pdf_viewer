@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Example</title>
+    <link rel="stylesheet" href="index.css" />
+
+  </head>
+  <body>
+    <!-- Button to open modal -->
+    <button onclick="openModal()">Open Modal</button>
+
+    <!-- Modal -->
+    <div id="modal">
+      <button onclick="closeModal()">Close Modal</button>
+      <iframe
+        src="https://www.fesb.unist.hr/wp-content/uploads/2022/11/Culic-Ana_kvalifikacijski-rad.pdf"
+        width="100%"
+        height="100%"
+      ></iframe>
+    </div>
+    <script src="index.js"></script>
+<!-- 
+    <script>
+      // JavaScript to open and close the modal
+      function openModal() {
+        document.getElementById('modal').style.display = 'block';
+      }
+
+      function closeModal() {
+        document.getElementById('modal').style.display = 'none';
+      }
+    </script> -->
+  </body>
+</html>

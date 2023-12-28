@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dux PDF Viewer</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- You should add pdf url to here -->
+    <button
+      onclick="openModal('https://www.fesb.unist.hr/wp-content/uploads/2022/11/Culic-Ana_kvalifikacijski-rad.pdf')"
+    >
+      Open Modal
+    </button>
+
+    <div id="modal-container" onclick="closeModal(event)">
+      <div id="modal" onclick="stopPropagation(event)">
+        <div></div>
+        <iframe id="myframe" width="100%" height="100%"></iframe>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
